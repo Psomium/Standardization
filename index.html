@@ -4,8 +4,42 @@
 
 <style>
 
-body{
+body {
 	font-family: sans-serif;
+}
+	
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: rgba(200, 200, 200, 1);
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li a {
+	display: block;
+	color: rgba(240, 240, 240, 1);
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+	background-color: rgba(240, 240, 240, 1);
+}
+
+.active {
+	background-color: rgba(200, 200, 200, 1);
 }
 	
 </style>
@@ -15,7 +49,11 @@ body{
 
 
 <div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 80px;">
-	
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="donate.html">Donate</a></li>
+		<li style="float: right;"><a href="about.html">About</a></li>
+	</ul>
 </div>
 
 <div id="Content" style="position: fixed; left: 0px; top: 80px; right: 0px; bottom: 80px;">
@@ -23,8 +61,7 @@ body{
 </div>
 
 <div id="Bottom" style="position: fixed; left: 0px; right: 0px; bottom: 0px; height: 80px; border-top-style: solid; border-width: 1px; font-size: 16px; text-align: center; padding: 8px;">
-	This is an initiative, which is completely on a free basis, without any interests.<br>
 	© <a href="https://psomium.github.io/Standardization/index.html">Standardization™</a> under the initiative of <a href="https://psomium.com">Psomium™</a>, <script>var Year_Create = '2022'; var Year_Now = new Date().getFullYear(); if(Year_Create == Year_Now){document.write(Year_Create);}else{document.write(Year_Create+'-'+Year_Now);}</script>.<br> 
-	Everything in this environment is covered by the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"</a> license.<br>
-	All rights reserved.
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms & Conditions</a>. All rights reserved.<br>
+	This is an initiative entirely on a free basis, with no external interests as its target.<br>
 </div>
