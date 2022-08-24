@@ -68,6 +68,13 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 	
+@media only screen and (max-width: 440px) {
+    li a {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+	
 </style>
 
 <body style="background-color: rgba(252, 252, 252, 1);"></body>
@@ -77,9 +84,14 @@ li a:hover:not(.active) {
 
 <div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 46px; background-color: rgba(240, 240, 240, 1);">
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="donate.html">Donate</a></li>
-		<li class="active" style="float: right;"><a href="about.html">About</a></li>
+        
+		<li><a href="index">Home</a></li>
+		<li><a href="donate">Donate</a></li>
+        
+        <li style="position: absolute; left: calc(50% - 72px); right: calc(50% - 72px); width: 144px; font-weight: bold; border-style: none;"><a>Standardization</a></li>
+        
+		<li class="active" style="float: right;"><a href="about">About</a></li>
+        
 	</ul>
 </div>
 
