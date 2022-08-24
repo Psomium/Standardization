@@ -68,6 +68,13 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 	
+@media only screen and (max-width: 440px) {
+    li a {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+	
 </style>
 
 <body style="background-color: rgba(252, 252, 252, 1);"></body>
@@ -77,9 +84,14 @@ li a:hover:not(.active) {
 
 <div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 46px; background-color: rgba(240, 240, 240, 1);">
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a class="active" href="donate.html">Donate</a></li>
-		<li style="float: right;"><a href="about.html">About</a></li>
+        
+		<li><a href="index">Home</a></li>
+		<li><a class="active" href="donate">Donate</a></li>
+        
+        <li style="position: absolute; left: calc(50% - 72px); right: calc(50% - 72px); width: 144px; font-weight: bold; border-style: none;"><a>Standardization</a></li>
+        
+		<li style="float: right;"><a href="about">About</a></li>
+        
 	</ul>
 </div>
 
@@ -87,13 +99,24 @@ li a:hover:not(.active) {
     
     <span style="font-size: 20px; font-weight: bold;">Lets grow!</span><br><br>
     
-	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 4); Amount_Update()">4,-</span>
-	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 8); Amount_Update()">8,-</span>
-	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 20); Amount_Update()">20,-</span>
-	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 60); Amount_Update()">60,-</span>
-	<span class="Content_Payment_Amount"><input type="number" min="4.00" max="100000000" oninput="localStorage.setItem('donate_item', this.value); Amount_Update()"></span><br><br>
+	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 10); Amount_Update()">10,-</span>
+	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 25); Amount_Update()">25,-</span>
+	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 50); Amount_Update()">50,-</span>
+	<span class="Content_Payment_Amount" onclick="localStorage.setItem('donate_item', 100); Amount_Update()">100,-</span>
+	<span class="Content_Payment_Amount"><input type="number" min="5" max="100000000" oninput="localStorage.setItem('donate_item', this.value); Amount_Update()"></span><br><br>
     
-    <span id="Content_Payment_Button" onclick="Pay()">Donate $4</span>
+    <span id="Content_Payment_Button" onclick="Pay()">Donate $10</span><br>
+    
+    
+    <br><br>
+    
+    
+    <span style="font-size: 20px; font-weight: bold;">Where does the money go?</span><br>
+    
+    - Hosting cost<br>
+    - Domain name<br>
+    - Registration of foundation<br>
+    - Expand and improve content<br>
     
 </div>
 
@@ -115,13 +138,13 @@ const Amount_Update = () => {
 
 const Pay = () => {
     
-    if(localStorage.getItem('donate_item') >= 4){
+    if(localStorage.getItem('donate_item') >= 5){
         
        location.href = 'https://useplink.com/payment/JQFtKnggavHYTqYRsKlEy/USD'+localStorage.getItem('donate_item');
         
     } else {
         
-        alert('The minimum amount is $4');
+        alert('The minimum amount is $5');
         
     }
     
