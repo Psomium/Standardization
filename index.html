@@ -67,6 +67,13 @@ table th {
   color: white;
 }
 	
+@media only screen and (max-width: 440px) {
+    li a {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+    
 </style>
 
 <body style="background-color: rgba(252, 252, 252, 1);"></body>
@@ -76,15 +83,20 @@ table th {
 
 <div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 46px; background-color: rgba(240, 240, 240, 1);">
 	<ul>
-		<li><a class="active" href="index.html">Home</a></li>
-		<li><a href="donate.html">Donate</a></li>
-		<li style="float: right;"><a href="about.html">About</a></li>
+        
+		<li><a class="active" href="index">Home</a></li>
+		<li><a href="donate">Donate</a></li>
+        
+        <li style="position: absolute; left: calc(50% - 72px); right: calc(50% - 72px); width: 144px; font-weight: bold; border-style: none;"><a>Standardization</a></li>
+        
+		<li style="float: right;"><a href="about">About</a></li>
+        
 	</ul>
 </div>
 
 <div id="Content" style="position: fixed; left: 0px; top: 46px; right: 0px; bottom: 66px; padding: 20px; overflow-y: auto;">
     
-	<span style="font-size: 22px; font-weight: bold;">Language</span><br>
+	<span id="Content_Language" style="font-size: 22px; font-weight: bold;">Language</span><br>
     <table>
     
         <tr>
@@ -105,7 +117,153 @@ table th {
     <br><br>
     
     
-    <span style="font-size: 22px; font-weight: bold;">Unit</span><br>
+    <span id="Content_Alphabet" style="font-size: 22px; font-weight: bold;">Alphabet</span><br>
+    <table>
+    
+        <tr>
+            <th>Upper case</th>
+            <th>Lower case</th>
+        </tr>
+        
+        
+        <tr>
+            <td>A</td>
+            <td>a</td>
+        </tr>
+        
+        <tr>
+            <td>B</td>
+            <td>b</td>
+        </tr>
+        
+        <tr>
+            <td>C</td>
+            <td>c</td>
+        </tr>
+        
+        <tr>
+            <td>D</td>
+            <td>d</td>
+        </tr>
+        
+        <tr>
+            <td>E</td>
+            <td>e</td>
+        </tr>
+        
+        <tr>
+            <td>F</td>
+            <td>f</td>
+        </tr>
+        
+        <tr>
+            <td>G</td>
+            <td>g</td>
+        </tr>
+        
+        <tr>
+            <td>H</td>
+            <td>h</td>
+        </tr>
+        
+        <tr>
+            <td>I</td>
+            <td>i</td>
+        </tr>
+        
+        <tr>
+            <td>J</td>
+            <td>j</td>
+        </tr>
+        
+        <tr>
+            <td>K</td>
+            <td>k</td>
+        </tr>
+        
+        <tr>
+            <td>L</td>
+            <td>l</td>
+        </tr>
+        
+        <tr>
+            <td>M</td>
+            <td>m</td>
+        </tr>
+        
+        <tr>
+            <td>N</td>
+            <td>n</td>
+        </tr>
+        
+        <tr>
+            <td>O</td>
+            <td>o</td>
+        </tr>
+        
+        <tr>
+            <td>P</td>
+            <td>p</td>
+        </tr>
+        
+        <tr>
+            <td>Q</td>
+            <td>q</td>
+        </tr>
+        
+        <tr>
+            <td>R</td>
+            <td>r</td>
+        </tr>
+        
+        <tr>
+            <td>S</td>
+            <td>s</td>
+        </tr>
+        
+        <tr>
+            <td>T</td>
+            <td>t</td>
+        </tr>
+        
+        <tr>
+            <td>U</td>
+            <td>u</td>
+        </tr>
+        
+        <tr>
+            <td>V</td>
+            <td>v</td>
+        </tr>
+        
+        <tr>
+            <td>W</td>
+            <td>w</td>
+        </tr>
+        
+        <tr>
+            <td>X</td>
+            <td>x</td>
+        </tr>
+        
+        <tr>
+            <td>Y</td>
+            <td>y</td>
+        </tr>
+        
+        <tr>
+            <td>Z</td>
+            <td>z</td>
+        </tr>
+        
+    </table>            
+    <span style="font-size: 12px;">Source: https://www.britannica.com/topic/Latin-alphabet</span>
+    
+    
+    <br><br>
+    
+    
+    <span id="Content_Unit" style="font-size: 22px; font-weight: bold;">Unit</span><br>
     <table>
     
         <tr>
@@ -169,7 +327,7 @@ table th {
     <br><br>
     
     
-    <span style="font-size: 22px; font-weight: bold;">Multiplier Prefix</span><br>
+    <span id="Content_MultiplierPrefix" style="font-size: 22px; font-weight: bold;">Multiplier Prefix</span><br>
     <table>
     
         <tr>
@@ -305,7 +463,9 @@ table th {
 </div>
 
 <div id="Bottom" style="position: fixed; left: 0px; right: 0px; bottom: 0px; height: 50px; background-color: rgba(240, 240, 240, 1); font-size: 12px; text-align: center; padding: 8px;">
+    
 	This is an initiative entirely on a free basis, with no external interests as its target.<br>
 	© <a href="https://psomium.github.io/Standardization/index.html">Standardization™</a> under the initiative of <a href="https://psomium.com?Origin=Standardization/Bottom">Psomium™</a>, <script>var Year_Create = '2022'; var Year_Now = new Date().getFullYear(); if(Year_Create == Year_Now){document.write(Year_Create);}else{document.write(Year_Create+'-'+Year_Now);}</script>.<br> 
 	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms & Conditions</a>. All rights reserved.<br>
+    
 </div>
