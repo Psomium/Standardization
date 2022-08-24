@@ -1,0 +1,122 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content=""Standardization, centralization and internationalization", that's where this voluntary movement comes from."/>
+
+<style>
+
+body {
+	font-family: sans-serif;
+}
+	
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: rgba(200, 200, 200, 1);
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li a {
+	display: block;
+	color: rgba(20, 20, 20, 1);
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+	background-color: rgba(240, 240, 240, 1);
+}
+
+.active {
+	background-color: rgba(200, 200, 200, 1);
+}
+    
+.Content_Payment_Amount {
+    width: 28px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 1);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+    
+.Content_Payment_Amount input {
+    height: 24px;
+    font-size: 16px;
+    background-color: rgba(220, 220, 220, 1);
+    border-style: none;
+}
+    
+#Content_Payment_Button {
+    width: 28px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(160, 160, 160, 1);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+	
+</style>
+
+<body style="background-color: rgba(252, 252, 252, 1);"></body>
+<title>About | Standardization</title>
+
+
+
+<div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 46px; background-color: rgba(240, 240, 240, 1);">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="donate.html">Donate</a></li>
+		<li class="active" style="float: right;"><a href="about.html">About</a></li>
+	</ul>
+</div>
+
+<div id="Content" style="position: fixed; left: 0px; top: 46px; right: 0px; bottom: 66px; padding: 20px; overflow-y: auto;">
+    
+    "Standardization, centralization and internationalization", that's where this voluntary movement comes from.
+    
+</div>
+
+<div id="Bottom" style="position: fixed; left: 0px; right: 0px; bottom: 0px; height: 50px; background-color: rgba(240, 240, 240, 1); font-size: 12px; text-align: center; padding: 8px;">
+	This is an initiative entirely on a free basis, with no external interests as its target.<br>
+	© <a href="https://psomium.github.io/Standardization/index.html">Standardization™</a> under the initiative of <a href="https://psomium.com?Origin=Standardization/Bottom">Psomium™</a>, <script>var Year_Create = '2022'; var Year_Now = new Date().getFullYear(); if(Year_Create == Year_Now){document.write(Year_Create);}else{document.write(Year_Create+'-'+Year_Now);}</script>.<br> 
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms & Conditions</a>. All rights reserved.<br>
+</div>
+
+
+
+<script>
+
+const Amount_Update = () => {
+    
+    document.getElementById('Content_Payment_Button').innerText = 'Donate $'+localStorage.getItem('donate_item');
+    
+}
+
+const Pay = () => {
+    
+    if(localStorage.getItem('donate_item') >= 4){
+        
+       location.href = 'https://useplink.com/payment/JQFtKnggavHYTqYRsKlEy/USD'+localStorage.getItem('donate_item');
+        
+    } else {
+        
+        alert('The minimum amount is $4');
+        
+    }
+    
+}
+
+</script>
