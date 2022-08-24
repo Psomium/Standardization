@@ -28,7 +28,7 @@ li:last-child {
 
 li a {
 	display: block;
-	color: rgba(240, 240, 240, 1);
+	color: rgba(20, 20, 20, 1);
 	text-align: center;
 	text-decoration: none;
 	padding: 14px 16px;
@@ -41,14 +41,40 @@ li a:hover:not(.active) {
 .active {
 	background-color: rgba(200, 200, 200, 1);
 }
+    
+table {
+    border-collapse: collapse;
+}
+    
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+    
+table tr:nth-child(even){
+    background-color: rgba(240, 240, 240, 1);
+}
+
+table tr:hover {
+    background-color: rgba(248, 248, 248, 1);
+}
+
+table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: rgba(60, 160, 240, 1);
+  color: white;
+}
 	
 </style>
 
-<title>Home - Standardization</title>
+<body style="background-color: rgba(252, 252, 252, 1);"></body>
+<title>Home | Standardization</title>
 
 
 
-<div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 80px;">
+<div id="Top" style="position: fixed; left: 0px; top: 0px; right: 0px; height: 46px; background-color: rgba(240, 240, 240, 1);">
 	<ul>
 		<li><a class="active" href="index.html">Home</a></li>
 		<li><a href="donate.html">Donate</a></li>
@@ -56,12 +82,230 @@ li a:hover:not(.active) {
 	</ul>
 </div>
 
-<div id="Content" style="position: fixed; left: 0px; top: 80px; right: 0px; bottom: 80px;">
-	
+<div id="Content" style="position: fixed; left: 0px; top: 46px; right: 0px; bottom: 66px; padding: 20px; overflow-y: auto;">
+    
+	<span style="font-size: 22px; font-weight: bold;">Language</span><br>
+    <table>
+    
+        <tr>
+            <th>General</th>
+            <th>Specific</th>
+        </tr>
+    
+        
+        <tr>
+            <td>English</td>
+            <td>British</td>
+        </tr>
+        
+    </table>
+    <span style="font-size: 12px;">Source: https://www.oxfordlearnersdictionaries.com/</span>
+    
+    
+    <br><br>
+    
+    
+    <span style="font-size: 22px; font-weight: bold;">Unit</span><br>
+    <table>
+    
+        <tr>
+            <th>Quantity</th>
+            <th colspan="2">Unit</th>
+        </tr>
+    
+        <tr>
+            <th>Name</th>
+            <th>Name</th>
+            <th>Symbol</th>
+        </tr>
+        
+        
+        <tr>
+            <td>time</td>
+            <td>second</td>
+            <td>s</td>
+        </tr>
+        
+        <tr>
+            <td>length</td>
+            <td>metre</td>
+            <td>m</td>
+        </tr>
+        
+        <tr>
+            <td>mass</td>
+            <td>kilogram</td>
+            <td>kg</td>
+        </tr>
+        
+        <tr>
+            <td>electric current</td>
+            <td>ampere</td>
+            <td>A</td>
+        </tr>
+        
+        <tr>
+            <td>thermodynamic temperature</td>
+            <td>kelvin</td>
+            <td>K</td>
+        </tr>
+        
+        <tr>
+            <td>amount of substance</td>
+            <td>mole</td>
+            <td>mol</td>
+        </tr>
+        
+        <tr>
+            <td>luminous intensity</td>
+            <td>candela</td>
+            <td>cd</td>
+        </tr>
+        
+    </table>
+    <span style="font-size: 12px;">Source: https://www.bipm.org/en/measurement-units/si-base-units</span>
+    
+    
+    <br><br>
+    
+    
+    <span style="font-size: 22px; font-weight: bold;">Multiplier Prefix</span><br>
+    <table>
+    
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Factor</th>
+        </tr>
+        
+        
+        <tr>
+			<td>yotta</td>
+			<td>Y</td>
+			<td>10<sup>24</sup></td>
+		</tr>
+        
+		<tr>
+		    <td>zetta</td>
+		    <td>Z</td>
+		    <td>10<sup>21</sup></td>
+		</tr>
+        
+		<tr>
+			<td>exa</td>
+			<td>E</td>
+			<td>10<sup>18</sup></td>
+		</tr>
+        
+		<tr>
+			<td>peta</td>
+			<td>P</td>
+			<td>10<sup>15</sup></td>
+		</tr>
+        
+		<tr>
+			<td>tera</td>
+			<td>T</td>
+			<td>10<sup>12</sup></td>
+		</tr>
+        
+		<tr>
+			<td>giga</td>
+			<td>G</td>
+			<td>10<sup>9</sup></td>
+		</tr>
+        
+		<tr>
+			<td>mega</td>
+			<td>M</td>
+			<td>10<sup>6</sup></td>
+		</tr>
+        
+		<tr>
+			<td>kilo</td>
+			<td>k</td>
+			<td>10<sup>3</sup></td>
+		</tr>
+        
+		<tr>
+			<td>hecto</td>
+			<td>h</td>
+			<td>10<sup>2</sup></td>
+		</tr>
+        
+		<tr>
+			<td>deca</td>
+			<td>da</td>
+			<td>10<sup>1</sup></td>
+		</tr>
+        
+		<tr>
+			<td>deci</td>
+			<td>d</td>
+			<td>10<sup>–1</sup></td>
+		</tr>
+        
+		<tr>
+			<td>centi</td>
+			<td>c</td>
+			<td>10<sup>–2</sup></td>
+		</tr>
+        
+		<tr>
+			<td>milli</td>
+			<td>m</td>
+			<td>10<sup>–3</sup></td>
+		</tr>
+        
+		<tr>
+			<td>micro</td>
+			<td>µ</td>
+			<td>10<sup>–6</sup></td>
+		</tr>
+        
+		<tr>
+			<td>nano</td>
+			<td>n</td>
+			<td>10<sup>–9</sup></td>
+		</tr>
+        
+		<tr>
+			<td>pico</td>
+			<td>p</td>
+			<td>10<sup>–12</sup></td>
+		</tr>
+        
+		<tr>
+			<td>femto</td>
+			<td>f</td>
+			<td>10<sup>–15</sup></td>
+		</tr>
+        
+		<tr>
+			<td>atto</td>
+			<td>a</td>
+			<td>10<sup>–18</sup></td>
+		</tr>
+        
+		<tr>
+			<td>zepto</td>
+			<td>z</td>
+			<td>10<sup>–21</sup></td>
+		</tr>
+        
+		<tr>
+			<td>yocto</td>
+			<td>y</td>
+			<td>10<sup>–24</sup></td>
+		</tr>
+    
+    </table>
+    <span style="font-size: 12px;">Source: https://www.bipm.org/en/measurement-units/si-prefixes</span>
+    
 </div>
 
-<div id="Bottom" style="position: fixed; left: 0px; right: 0px; bottom: 0px; height: 80px; border-top-style: solid; border-width: 1px; font-size: 16px; text-align: center; padding: 8px;">
-	© <a href="https://psomium.github.io/Standardization/index.html">Standardization™</a> under the initiative of <a href="https://psomium.com">Psomium™</a>, <script>var Year_Create = '2022'; var Year_Now = new Date().getFullYear(); if(Year_Create == Year_Now){document.write(Year_Create);}else{document.write(Year_Create+'-'+Year_Now);}</script>.<br> 
-	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms & Conditions</a>. All rights reserved.<br>
+<div id="Bottom" style="position: fixed; left: 0px; right: 0px; bottom: 0px; height: 50px; background-color: rgba(240, 240, 240, 1); font-size: 12px; text-align: center; padding: 8px;">
 	This is an initiative entirely on a free basis, with no external interests as its target.<br>
+	© <a href="https://psomium.github.io/Standardization/index.html">Standardization™</a> under the initiative of <a href="https://psomium.com?Origin=Standardization/Bottom">Psomium™</a>, <script>var Year_Create = '2022'; var Year_Now = new Date().getFullYear(); if(Year_Create == Year_Now){document.write(Year_Create);}else{document.write(Year_Create+'-'+Year_Now);}</script>.<br> 
+	<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms & Conditions</a>. All rights reserved.<br>
 </div>
